@@ -8,7 +8,6 @@ public class SplashScreen extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
@@ -21,6 +20,7 @@ public class SplashScreen extends Activity {
                 }finally{
                     Intent intent = new Intent(SplashScreen.this,MainActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         };
