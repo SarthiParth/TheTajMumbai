@@ -6,7 +6,6 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,10 +16,17 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
+                    HomeFragment homeFragment = new HomeFragment();
+                    FragmentManager manager = getSupportFragmentManager();
+                    manager.beginTransaction().replace(
+                            R.id.contentLayout,
+                            homeFragment,
+                            homeFragment.getTag()
+                    ).commit();
                     return true;
                 case R.id.navigation_about:
                     AboutFragment aboutFragment = new AboutFragment();
-                    FragmentManager manager = getSupportFragmentManager();
+                    manager = getSupportFragmentManager();
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
                             aboutFragment,
@@ -30,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_book:
                     return true;
                 case R.id.navigation_contact:
+                    ContactFragment contactFragment = new ContactFragment();
+                    manager = getSupportFragmentManager();
+                    manager.beginTransaction().replace(
+                            R.id.contentLayout,
+                            contactFragment,
+                            contactFragment.getTag()
+                    ).commit();
                     return true;
                 case R.id.navigation_gallery:
                     return true;
@@ -44,10 +57,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
-        bottomNavigationView.setSelectedItemId(R.id.navigation_home);
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setSelectedItemId(R.id.navigation_home);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 

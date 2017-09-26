@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.parthsarthi.thetajmumbai.ContactFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Get In Touch"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#8e744b"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/marker"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:src="@drawable/marker" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/marker"
+                android:padding="10dp"
+                android:text="@string/address"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/marker"
+                android:padding="15dp"
+                android:src="@drawable/contact" />
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_toRightOf="@id/phone"
+                android:padding="18.5dp"
+                android:text="+91 22 6665 3366"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/fax"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/phone"
+                android:padding="15dp"
+                android:src="@drawable/fax" />
+
+            <TextView
+                android:id="@+id/faxText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneText"
+                android:layout_toRightOf="@id/fax"
+                android:padding="18.5dp"
+                android:text="+91 22 6665 0300"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:context=".ContactFragment" />
+
+
+    </LinearLayout>
+
+</ScrollView>
