@@ -1,6 +1,5 @@
 package com.parthsarthi.thetajmumbai;
 
-
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -40,7 +39,7 @@ public class ContactFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLng taj = new LatLng(18.9217, 78.8330);
+        LatLng taj = new LatLng(18.921727, 72.833020);
         mMap.addMarker(new MarkerOptions().position(taj).title("The Taj Mahal Palace"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(taj, 18));
     }

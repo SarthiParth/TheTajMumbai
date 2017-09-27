@@ -12,15 +12,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
+            android:padding="@dimen/normal_padding"
             android:text="At A Glance"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="#8e744b"
-            android:textSize="35sp" />
+            android:textSize="@dimen/title_text_size" />
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="230dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
@@ -29,11 +29,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
+            android:paddingTop="@dimen/normal_padding"
             android:text="History"
             android:textAlignment="center"
             android:textColor="#8e744b"
-            android:textSize="30sp" />
+            android:textSize="@dimen/sub_title_text_size" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -43,19 +43,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
+            android:paddingLeft="@dimen/normal_padding"
+            android:paddingRight="@dimen/normal_padding"
             android:text="@string/about_history"
-            android:textSize="16sp" />
+            android:textSize="@dimen/default_text_size" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
+            android:paddingTop="@dimen/normal_padding"
             android:text="Location"
             android:textAlignment="center"
             android:textColor="#8e744b"
-            android:textSize="30sp" />
+            android:textSize="@dimen/sub_title_text_size" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -65,19 +65,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
+            android:paddingLeft="@dimen/normal_padding"
+            android:paddingRight="@dimen/normal_padding"
             android:text="@string/about_location"
-            android:textSize="16sp" />
+            android:textSize="@dimen/default_text_size" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
+            android:paddingTop="@dimen/normal_padding"
             android:text="Cuisines"
             android:textAlignment="center"
             android:textColor="#8e744b"
-            android:textSize="30sp" />
+            android:textSize="@dimen/sub_title_text_size" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -87,19 +87,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
+            android:paddingLeft="@dimen/normal_padding"
+            android:paddingRight="@dimen/normal_padding"
             android:text="@string/about_cuisines"
-            android:textSize="16sp" />
+            android:textSize="@dimen/default_text_size" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
+            android:paddingTop="@dimen/normal_padding"
             android:text="Facilites"
             android:textAlignment="center"
             android:textColor="#8e744b"
-            android:textSize="30sp" />
+            android:textSize="@dimen/sub_title_text_size" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -109,9 +109,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
+            android:paddingLeft="@dimen/normal_padding"
+            android:paddingRight="@dimen/normal_padding"
             android:text="@string/about_facilities"
-            android:textSize="16sp" />
+            android:textSize="@dimen/default_text_size" />
     </LinearLayout>
 </ScrollView>
