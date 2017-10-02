@@ -12,8 +12,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/normal_padding"
-            android:text="Get In Touch"
+            android:paddingTop="15dp"
+            android:text="@string/get_in_touch"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="#8e744b"
@@ -27,35 +27,65 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/normal_padding">
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:padding="15dp">
 
             <ImageView
                 android:id="@+id/marker"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:padding="@dimen/normal_padding"
+                android:padding="5dp"
                 android:src="@drawable/marker" />
 
             <TextView
-                android:id="@+id/address"
+                android:id="@+id/postalAddress"
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/marker"
                 android:layout_alignParentTop="true"
                 android:layout_toEndOf="@id/marker"
-                android:padding="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
                 android:text="@string/address"
                 android:textSize="@dimen/default_text_size" />
 
             <ImageView
-                android:id="@+id/phone"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:id="@+id/mail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/address"
-                android:padding="@dimen/normal_padding"
+                android:layout_below="@+id/postalAddress"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:src="@drawable/mail" />
+
+            <TextView
+                android:id="@+id/mailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mail"
+                android:layout_below="@id/postalAddress"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/mail"
+                android:autoLink="email"
+                android:linksClickable="true"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/taj_email"
+                android:textColorLink="?android:textColorSecondary"
+                android:textSize="@dimen/default_text_size" />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mail"
+                android:padding="5dp"
                 android:src="@drawable/contact" />
 
             <TextView
@@ -63,19 +93,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/phone"
-                android:layout_below="@id/address"
+                android:layout_below="@id/mail"
                 android:layout_toEndOf="@id/phone"
-                android:padding="20dp"
-                android:text="+91 22 6665 3366"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/taj_phone"
+                android:textColorLink="?android:textColorSecondary"
                 android:textSize="@dimen/default_text_size" />
 
             <ImageView
                 android:id="@+id/fax"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/phoneText"
-                android:padding="@dimen/normal_padding"
+                android:padding="5dp"
                 android:src="@drawable/fax" />
 
             <TextView
@@ -85,9 +120,98 @@
                 android:layout_alignParentBottom="true"
                 android:layout_below="@id/phoneText"
                 android:layout_toEndOf="@id/fax"
-                android:padding="20dp"
-                android:text="+91 22 6665 0300"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/taj_fax"
                 android:textSize="@dimen/default_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="@string/we_are_social"
+                android:textColor="#8e744b"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <ImageButton
+                android:id="@+id/webBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textView2"
+                android:background="@drawable/web_btn"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/fbBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/webBtn"
+                android:background="@drawable/facebook_btn"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/twitterBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/fbBtn"
+                android:background="@drawable/twitter_btn"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/gplusBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/twitterBtn"
+                android:background="@drawable/gplus_btn"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/instaBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/gplusBtn"
+                android:background="@drawable/instagram_btn"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/pinBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/instaBtn"
+                android:background="@drawable/pinterest_btn"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/ytBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/pinBtn"
+                android:background="@drawable/youtube_btn"
+                android:scaleType="fitXY" />
 
         </RelativeLayout>
 
@@ -98,7 +222,6 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             tools:context=".ContactFragment" />
-
 
     </LinearLayout>
 

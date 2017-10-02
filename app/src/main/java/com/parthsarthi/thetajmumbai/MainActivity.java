@@ -1,11 +1,13 @@
 package com.parthsarthi.thetajmumbai;
 
+
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
                     FragmentManager manager = getSupportFragmentManager();
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
-                            homeFragment,
-                            homeFragment.getTag()
+                            homeFragment
                     ).commit();
                     return true;
                 case R.id.navigation_about:
@@ -29,19 +30,23 @@ public class MainActivity extends AppCompatActivity {
                     manager = getSupportFragmentManager();
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
-                            aboutFragment,
-                            aboutFragment.getTag()
+                            aboutFragment
                     ).commit();
                     return true;
                 case R.id.navigation_book:
+                    BookFragment bookFragment = new BookFragment();
+                    manager = getSupportFragmentManager();
+                    manager.beginTransaction().replace(
+                            R.id.contentLayout,
+                            bookFragment
+                    ).commit();
                     return true;
                 case R.id.navigation_contact:
                     ContactFragment contactFragment = new ContactFragment();
                     manager = getSupportFragmentManager();
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
-                            contactFragment,
-                            contactFragment.getTag()
+                            contactFragment
                     ).commit();
                     return true;
                 case R.id.navigation_gallery:
@@ -56,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        HomeFragment homeFragment = new HomeFragment();
+        FragmentManager manager = getSupportFragmentManager();
+        manager.beginTransaction().replace(
+                R.id.contentLayout,
+                homeFragment
+        ).commit();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setSelectedItemId(R.id.navigation_home);
