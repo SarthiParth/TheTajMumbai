@@ -39,7 +39,7 @@ public class ContactFragment extends Fragment implements OnMapReadyCallback {
             mapFrag.getMapAsync(this);
         }
 
-        v.findViewById(R.id.webBtn).setOnClickListener(new View.OnClickListener() {
+        v.findViewById(R.id.webText).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Intent.ACTION_VIEW,

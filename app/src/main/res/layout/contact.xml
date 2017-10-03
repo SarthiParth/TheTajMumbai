@@ -44,7 +44,7 @@
                 android:id="@+id/postalAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/marker"
+                android:layout_above="@+id/mail"
                 android:layout_alignParentTop="true"
                 android:layout_toEndOf="@id/marker"
                 android:paddingEnd="0dp"
@@ -57,7 +57,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/postalAddress"
+                android:layout_below="@id/marker"
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
                 android:src="@drawable/mail" />
@@ -66,8 +66,8 @@
                 android:id="@+id/mailText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/mail"
-                android:layout_below="@id/postalAddress"
+                android:layout_above="@+id/phone"
+                android:layout_below="@id/marker"
                 android:layout_marginTop="5dp"
                 android:layout_toEndOf="@id/mail"
                 android:autoLink="email"
@@ -84,7 +84,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/mail"
+                android:layout_below="@id/mail"
                 android:padding="5dp"
                 android:src="@drawable/contact" />
 
@@ -92,7 +92,7 @@
                 android:id="@+id/phoneText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/phone"
+                android:layout_above="@+id/fax"
                 android:layout_below="@id/mail"
                 android:layout_toEndOf="@id/phone"
                 android:autoLink="phone"
@@ -109,7 +109,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/phoneText"
+                android:layout_below="@id/phone"
                 android:padding="5dp"
                 android:src="@drawable/fax" />
 
@@ -117,13 +117,36 @@
                 android:id="@+id/faxText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_below="@id/phoneText"
+                android:layout_above="@+id/web"
+                android:layout_below="@id/phone"
                 android:layout_toEndOf="@id/fax"
                 android:paddingEnd="0dp"
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"
                 android:text="@string/taj_fax"
+                android:textSize="@dimen/default_text_size" />
+
+            <ImageView
+                android:id="@+id/web"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fax"
+                android:padding="5dp"
+                android:src="@drawable/web" />
+
+            <TextView
+                android:id="@+id/webText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/fax"
+                android:layout_toEndOf="@id/web"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/taj_website"
+                android:textColorLink="?android:textColorSecondary"
                 android:textSize="@dimen/default_text_size" />
 
         </RelativeLayout>
@@ -136,81 +159,72 @@
             android:layout_marginStart="@dimen/activity_horizontal_margin">
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
+                android:id="@+id/socialText"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:paddingBottom="10dp"
                 android:text="@string/we_are_social"
                 android:textColor="#8e744b"
                 android:textSize="@dimen/sub_title_text_size" />
 
             <ImageButton
-                android:id="@+id/webBtn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentStart="true"
-                android:layout_below="@id/textView2"
-                android:background="@drawable/web_btn"
-                android:scaleType="fitXY" />
-
-            <ImageButton
                 android:id="@+id/fbBtn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_below="@id/textView2"
-                android:layout_marginStart="10dp"
-                android:layout_toEndOf="@id/webBtn"
-                android:background="@drawable/facebook_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/socialText"
+                android:background="@drawable/facebook"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/twitterBtn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_below="@id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/socialText"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/fbBtn"
-                android:background="@drawable/twitter_btn"
+                android:background="@drawable/twitter"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/gplusBtn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_below="@id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/socialText"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/twitterBtn"
-                android:background="@drawable/gplus_btn"
+                android:background="@drawable/googleplus"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/instaBtn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_below="@id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/socialText"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/gplusBtn"
-                android:background="@drawable/instagram_btn"
+                android:background="@drawable/instagram"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/pinBtn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_below="@id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/socialText"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/instaBtn"
-                android:background="@drawable/pinterest_btn"
+                android:background="@drawable/pinterest"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/ytBtn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_below="@id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/socialText"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/pinBtn"
-                android:background="@drawable/youtube_btn"
+                android:background="@drawable/youtube"
                 android:scaleType="fitXY" />
 
         </RelativeLayout>
