@@ -62,7 +62,6 @@
             android:id="@+id/checkInDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clickable="true"
             android:ems="10"
             android:focusable="false"
             android:hint="@string/check_in_date"
@@ -73,6 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:focusable="false"
             android:hint="@string/check_out_date"
             android:inputType="date" />
 

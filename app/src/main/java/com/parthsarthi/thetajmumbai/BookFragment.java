@@ -3,17 +3,21 @@ package com.parthsarthi.thetajmumbai;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.view.View.OnClickListener;
 
 
 public class BookFragment extends Fragment {
+
+    private View v;
 
     public BookFragment() {
         // Required empty public constructor
@@ -23,7 +27,7 @@ public class BookFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.book, container, false);
+        v = inflater.inflate(R.layout.book, container, false);
         Spinner spinner = v.findViewById(R.id.rooms);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),
                 R.array.rooms_list, android.R.layout.simple_spinner_item);
@@ -40,6 +44,30 @@ public class BookFragment extends Fragment {
         });
 
         return v;
+    }
+
+
+    public void onStart() {
+        super.onStart();
+
+        EditText inDate = v.findViewById(R.id.checkInDate);
+        inDate.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                    DateDialog dialog = new DateDialog(view);
+                    FragmentTransaction ft = getFragmentManager().beginTransaction();
+                    dialog.show(ft, "Select Check-In Date");
+            }
+        });
+
+        EditText outDate = v.findViewById(R.id.checkOutDate);
+        outDate.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                DateDialog dialog = new DateDialog(view);
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                dialog.show(ft, "Select Check-Out Date");
+            }
+        });
+
     }
 
 }

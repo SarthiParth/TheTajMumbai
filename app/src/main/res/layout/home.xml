@@ -1,14 +1,37 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context="com.parthsarthi.thetajmumbai.HomeFragment">
 
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="3dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
     <TextView
+        android:id="@+id/expTaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carouselView"
+        android:layout_marginTop="30dp"
+        android:text="@string/experience_the_taj_mahal_palace"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="@string/about_company"
-        android:textSize="@dimen/default_text_size" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:rating="4.5" />
 
-</ScrollView>
+</RelativeLayout>
