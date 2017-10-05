@@ -49,7 +49,13 @@ public class MainActivity extends AppCompatActivity {
                             contactFragment
                     ).commit();
                     return true;
-                case R.id.navigation_gallery:
+                case R.id.navigation_rooms:
+                    RoomFragment roomFragment = new RoomFragment();
+                    manager = getSupportFragmentManager();
+                    manager.beginTransaction().replace(
+                            R.id.contentLayout,
+                            roomFragment
+                    ).commit();
                     return true;
             }
             return false;

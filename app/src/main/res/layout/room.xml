@@ -1,0 +1,232 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parthsarthi.thetajmumbai.RoomFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/superiorRoom"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/superiorroom" />
+
+        <TextView
+            android:id="@+id/superiorRoomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/superiorRoom"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/tower_superior_rooms"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/deluxeRoom"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/superiorRoom"
+            android:src="@drawable/deluxeroom" />
+
+        <TextView
+            android:id="@+id/deluxeRoomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/deluxeRoom"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/tower_deluxe_rooms"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/luxGrandeRoom"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/deluxeRoom"
+            android:src="@drawable/luxgranderoom" />
+
+        <TextView
+            android:id="@+id/luxGrandeRoomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/luxGrandeRoom"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/luxury_grande_rooms"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/tajClubRoom"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/luxGrandeRoom"
+            android:src="@drawable/tajclubroom" />
+
+        <TextView
+            android:id="@+id/tajClubRoomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tajClubRoom"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/taj_club_rooms"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/execSuite"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/tajClubRoom"
+            android:src="@drawable/execsuite" />
+
+        <TextView
+            android:id="@+id/execSuiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/execSuite"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/executive_suites"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/luxSuite"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/execSuite"
+            android:src="@drawable/luxsuite" />
+
+        <TextView
+            android:id="@+id/luxSuiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/luxSuite"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/luxury_suites"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/grandLuxSuite"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/luxSuite"
+            android:src="@drawable/grandluxsuite" />
+
+        <TextView
+            android:id="@+id/grandLuxSuiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/grandLuxSuite"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/grand_luxury_suites"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/raviShankarSuite"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/grandLuxSuite"
+            android:src="@drawable/ravishankarsuite" />
+
+        <TextView
+            android:id="@+id/raviShankarSuiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/raviShankarSuite"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/ravi_shankar_suite"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/tataSuite"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/raviShankarSuite"
+            android:src="@drawable/tatasuite" />
+
+        <TextView
+            android:id="@+id/tataSuiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tataSuite"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/the_tata_suite"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/rajputSuite"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/tataSuite"
+            android:src="@drawable/rajputsuite" />
+
+        <TextView
+            android:id="@+id/rajputSuiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rajputSuite"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="#88000000"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/rajput_suite"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

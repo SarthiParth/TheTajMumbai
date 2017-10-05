@@ -34,10 +34,8 @@ public class HomeFragment extends Fragment {
         carouselView.setPageCount(homeSlide.length);
         carouselView.setImageListener(imageListener);
 
-        Typeface face = Typeface.createFromAsset(getActivity().getAssets(),
-                "ostrichsans.ttf");
+        Typeface face = Typeface.createFromAsset(getActivity().getAssets(), "ostrichsans.ttf");
         ((TextView) v.findViewById(R.id.expTaj)).setTypeface(face);
-
 
         return v;
     }

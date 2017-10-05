@@ -27,11 +27,21 @@
     <string name="taj_fax">+91 22 6665 0300</string>
     <string name="we_are_social">We Are Social</string>
     <string name="about">About</string>
-    <string name="gallery">Gallery</string>
+    <string name="rooms">Rooms/Suites</string>
     <string name="home">Home</string>
     <string name="contact_us">Contact Us</string>
     <string name="taj_website"><u>taj.tajhotels.com</u></string>
     <string name="experience_the_taj_mahal_palace">Experience The Taj Mahal Palace</string>
+    <string name="rajput_suite">Rajput Suite</string>
+    <string name="the_tata_suite">The Tata Suite</string>
+    <string name="ravi_shankar_suite">Ravi Shankar Suite</string>
+    <string name="grand_luxury_suites">Grand Luxury Suites</string>
+    <string name="luxury_suites">Luxury Suites</string>
+    <string name="executive_suites">Executive Suites</string>
+    <string name="taj_club_rooms">Taj Club Rooms</string>
+    <string name="luxury_grande_rooms">Luxury Grande Rooms</string>
+    <string name="tower_deluxe_rooms">Tower Deluxe Rooms</string>
+    <string name="tower_superior_rooms">Tower Superior Rooms</string>
     <string-array name="rooms_list">
         <item>Tower Superior Rooms</item>
         <item>Tower Deluxe Rooms</item>
