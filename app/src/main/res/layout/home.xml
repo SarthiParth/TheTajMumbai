@@ -25,7 +25,7 @@
         android:text="@string/experience_the_taj_mahal_palace"
         android:textAlignment="center"
         android:textSize="40sp" />
-
+<!--
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
@@ -33,5 +33,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:rating="4.5" />
-
+-->
 </RelativeLayout>

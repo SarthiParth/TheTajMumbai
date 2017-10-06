@@ -91,12 +91,6 @@
         android:padding="10dp"
         android:text="@string/tata_suite_size" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_below="@id/sizeDesc"
-        android:background="@android:color/darker_gray" />
-
     <TextView
         android:id="@+id/sigExpHead"
         android:layout_width="wrap_content"
@@ -119,7 +113,7 @@
 
     <Button
         android:id="@+id/closeBtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/sigExpHeadDesc"
