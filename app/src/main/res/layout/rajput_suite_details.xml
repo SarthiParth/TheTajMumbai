@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/rajput_suite"
+        android:textAlignment="center"
+        android:textColor="#8e744b"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/divider"
+        android:layout_below="@id/head"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div"
+        android:padding="10dp"
+        android:text="@string/rajput_suite_desc" />
+    <TextView
+        android:id="@+id/bedHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc"
+        android:padding="10dp"
+        android:text="@string/beds"
+        android:textAllCaps="true"
+        android:textColor="#8e744b" />
+
+    <TextView
+        android:id="@+id/bedDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@id/bedHead"
+        android:padding="10dp"
+        android:text="@string/bed_k" />
+
+    <TextView
+        android:id="@+id/viewHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/viewDesc"
+        android:layout_alignBottom="@+id/viewDesc"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:text="@string/view"
+        android:textAllCaps="true"
+        android:textColor="#8e744b" />
+
+    <TextView
+        android:id="@+id/viewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/gateway_of_india_sea_views"
+        android:layout_below="@+id/bedDesc"
+        android:layout_alignStart="@+id/bedDesc" />
+
+    <TextView
+        android:id="@+id/sizeHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sizeDesc"
+        android:layout_alignBottom="@+id/sizeDesc"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:text="@string/size"
+        android:textAllCaps="true"
+        android:textColor="#8e744b" />
+
+    <TextView
+        android:id="@+id/sizeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/viewDesc"
+        android:layout_below="@+id/viewDesc"
+        android:padding="10dp"
+        android:text="@string/rajput_suite_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/sizeDesc"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/sigExpHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sizeHead"
+        android:padding="10dp"
+        android:text="@string/signature_experience"
+        android:textAllCaps="true"
+        android:textColor="#8e744b" />
+
+    <TextView
+        android:id="@+id/sigExpHeadDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sigExpHead"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/rajput_suite_sig_exp" />
+
+
+    <Button
+        android:id="@+id/closeBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sigExpHeadDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/close" />
+
+</RelativeLayout>

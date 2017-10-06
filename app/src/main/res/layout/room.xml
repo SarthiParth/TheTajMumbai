@@ -5,6 +5,7 @@
     tools:context="com.parthsarthi.thetajmumbai.RoomFragment">
 
     <RelativeLayout
+        android:id="@+id/rl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -12,6 +13,7 @@
             android:id="@+id/superiorRoom"
             android:layout_width="match_parent"
             android:layout_height="230dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/superiorroom" />
 
         <TextView
@@ -29,11 +31,23 @@
             android:text="@string/tower_superior_rooms"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/supRoomDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/deluxeRoom"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/superiorRoomText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/deluxeRoom"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/superiorRoom"
+            android:scaleType="centerCrop"
             android:src="@drawable/deluxeroom" />
 
         <TextView
@@ -51,11 +65,23 @@
             android:text="@string/tower_deluxe_rooms"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/deluxeRoomDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/luxGrandeRoom"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/deluxeRoomText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/luxGrandeRoom"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/deluxeRoom"
+            android:scaleType="centerCrop"
             android:src="@drawable/luxgranderoom" />
 
         <TextView
@@ -73,11 +99,23 @@
             android:text="@string/luxury_grande_rooms"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/luxGrandeRoomDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tajClubRoom"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/luxGrandeRoomText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/tajClubRoom"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/luxGrandeRoom"
+            android:scaleType="centerCrop"
             android:src="@drawable/tajclubroom" />
 
         <TextView
@@ -95,11 +133,23 @@
             android:text="@string/taj_club_rooms"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/tajClubRoomDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/execSuite"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/tajClubRoomText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/execSuite"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/tajClubRoom"
+            android:scaleType="centerCrop"
             android:src="@drawable/execsuite" />
 
         <TextView
@@ -117,11 +167,23 @@
             android:text="@string/executive_suites"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/execSuiteDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/luxSuite"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/execSuiteText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/luxSuite"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/execSuite"
+            android:scaleType="centerCrop"
             android:src="@drawable/luxsuite" />
 
         <TextView
@@ -139,11 +201,23 @@
             android:text="@string/luxury_suites"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/luxSuiteDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/grandLuxSuite"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/luxSuiteText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/grandLuxSuite"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/luxSuite"
+            android:scaleType="centerCrop"
             android:src="@drawable/grandluxsuite" />
 
         <TextView
@@ -161,11 +235,23 @@
             android:text="@string/grand_luxury_suites"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/grandLuxSuiteDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/raviShankarSuite"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/grandLuxSuiteText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/raviShankarSuite"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/grandLuxSuite"
+            android:scaleType="centerCrop"
             android:src="@drawable/ravishankarsuite" />
 
         <TextView
@@ -183,11 +269,23 @@
             android:text="@string/ravi_shankar_suite"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/raviShankarSuiteDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tataSuite"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/raviShankarSuiteText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/tataSuite"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/raviShankarSuite"
+            android:scaleType="centerCrop"
             android:src="@drawable/tatasuite" />
 
         <TextView
@@ -205,11 +303,23 @@
             android:text="@string/the_tata_suite"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/tataSuiteDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rajputSuite"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/tataSuiteText"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details" />
+
         <ImageView
             android:id="@+id/rajputSuite"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:layout_below="@id/tataSuite"
+            android:scaleType="centerCrop"
             android:src="@drawable/rajputsuite" />
 
         <TextView
@@ -226,6 +336,15 @@
             android:paddingTop="15dp"
             android:text="@string/rajput_suite"
             android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/rajputSuiteDetailsBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tataSuiteDetailsBtn"
+            android:text="@string/view_details" />
 
     </RelativeLayout>
 
