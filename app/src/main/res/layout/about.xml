@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/aboutHead"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="15dp"
@@ -24,9 +25,11 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/img1" />
 
         <TextView
+            android:id="@+id/txtHistory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
@@ -46,7 +49,15 @@
             android:text="@string/about_history"
             android:textSize="@dimen/default_text_size" />
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img8" />
+
         <TextView
+            android:id="@+id/txtLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
@@ -67,6 +78,7 @@
             android:textSize="@dimen/default_text_size" />
 
         <TextView
+            android:id="@+id/txtCuisines"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
@@ -86,7 +98,15 @@
             android:text="@string/about_cuisines"
             android:textSize="@dimen/default_text_size" />
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img7" />
+
         <TextView
+            android:id="@+id/txtFacilities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
@@ -105,5 +125,13 @@
             android:layout_height="wrap_content"
             android:text="@string/about_facilities"
             android:textSize="@dimen/default_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img9" />
+
     </LinearLayout>
 </ScrollView>

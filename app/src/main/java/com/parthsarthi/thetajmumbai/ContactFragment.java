@@ -1,6 +1,7 @@
 package com.parthsarthi.thetajmumbai;
 
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.net.Uri;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.content.Intent;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -22,6 +24,7 @@ public class ContactFragment extends Fragment implements OnMapReadyCallback {
 
     private View v;
     private GoogleMap mMap;
+    private Typeface face;
 
     public ContactFragment() {
         // Required empty public constructor
@@ -107,6 +110,11 @@ public class ContactFragment extends Fragment implements OnMapReadyCallback {
                 ));
             }
         });
+
+        face = Typeface.createFromAsset(getActivity().getAssets(), "geosans.ttf");
+        ((TextView) v.findViewById(R.id.contactHead)).setTypeface(face);
+        face = Typeface.createFromAsset(getActivity().getAssets(), "champagne_limousines.ttf");
+        ((TextView) v.findViewById(R.id.socialText)).setTypeface(face);
 
         return v;
     }

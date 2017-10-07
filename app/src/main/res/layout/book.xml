@@ -12,6 +12,7 @@
         tools:context="com.parthsarthi.thetajmumbai.BookFragment">
 
         <TextView
+            android:id="@+id/bookHead"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"

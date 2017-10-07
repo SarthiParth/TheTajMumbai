@@ -18,7 +18,7 @@ public class HomeFragment extends Fragment {
 
     private View v;
     CarouselView carouselView;
-    int[] homeSlide = {R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6};
+    int[] homeSlide = {R.drawable.img5, R.drawable.img3, R.drawable.img4, R.drawable.img2, R.drawable.img6};
 
     public HomeFragment() {
         // Required empty public constructor
