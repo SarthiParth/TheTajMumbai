@@ -1,4 +1,5 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -43,11 +44,27 @@
             android:layout_height="50dp"
             android:src="@drawable/divider" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_history_view"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/about_history"
-            android:textSize="@dimen/default_text_size" />
+            app:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:padding="16dp" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
 
         <ImageView
             android:layout_width="match_parent"
@@ -71,11 +88,27 @@
             android:layout_height="50dp"
             android:src="@drawable/divider" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_location_view"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/about_location"
-            android:textSize="@dimen/default_text_size" />
+            app:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:padding="16dp" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
 
         <TextView
             android:id="@+id/txtCuisines"
@@ -92,11 +125,27 @@
             android:layout_height="50dp"
             android:src="@drawable/divider" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_cuisines_view"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/about_cuisines"
-            android:textSize="@dimen/default_text_size" />
+            app:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:padding="16dp" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
 
         <ImageView
             android:layout_width="match_parent"
@@ -120,11 +169,27 @@
             android:layout_height="50dp"
             android:src="@drawable/divider" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_facilities_view"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/about_facilities"
-            android:textSize="@dimen/default_text_size" />
+            app:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:padding="16dp" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
 
         <ImageView
             android:layout_width="match_parent"
@@ -134,4 +199,5 @@
             android:src="@drawable/img9" />
 
     </LinearLayout>
+
 </ScrollView>

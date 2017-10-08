@@ -11,5 +11,4 @@
     <style name="SplashTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
-
 </resources>

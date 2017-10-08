@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -14,7 +15,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.View.OnClickListener;
 
 
 public class BookFragment extends Fragment {
@@ -58,9 +58,9 @@ public class BookFragment extends Fragment {
         EditText inDate = v.findViewById(R.id.checkInDate);
         inDate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                    DateDialog dialog = new DateDialog(view);
-                    FragmentTransaction ft = getFragmentManager().beginTransaction();
-                    dialog.show(ft, "Select Check-In Date");
+                DateDialog dialog = new DateDialog(view);
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                dialog.show(ft, "Select Check-In Date");
             }
         });
 

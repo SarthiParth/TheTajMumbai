@@ -18,8 +18,8 @@
         android:id="@+id/div"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:src="@drawable/divider"
-        android:layout_below="@id/head"/>
+        android:layout_below="@id/head"
+        android:src="@drawable/divider" />
 
     <TextView
         android:id="@+id/desc"

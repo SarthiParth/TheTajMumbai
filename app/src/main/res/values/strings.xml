@@ -84,10 +84,12 @@
     <string name="taj_club_room_size">400&#8211;450 sq ft (37&#8211;42 sq m)</string>
     <string name="taj_club_room_sig_exp">Exclusive access to Taj Club &amp; Lounge &amp; other services</string>
     <string name="tata_suite_desc">Created in the honor of our Founder, The Tata Suite is a extravagance of exotic artefacts, lush carpets, priceless paintings, authentic colonial furniture and fine architectural detailing. A salute to the spirit that created it!</string>
-    <string name="panoramic_gateway_of_india_sea_views"><![CDATA[Panoramic Gateway of India & sea views]]></string>
+    <string name="panoramic_gateway_of_india_sea_views">Panoramic Gateway of India &amp; sea views</string>
     <string name="tata_suite_size">5,000 sq ft (465 sq m)</string>
     <string name="tata_suite_sig_exp">The epitome of luxury &#8212; the most desired suite in Mumbai</string>
-    <string-array name="rooms_list">
+    <string name="hotel_facilities">&#8226; Luxurious rooms &amp; suites with iconic Arabian Sea &amp; Gateway of India views\n&#8226; Options of smoking &amp; non-smoking accommodation\n&#8226; Marble bathrooms with luxury bath amenities or five-fixture bathrooms with luxury bath amenities\n&#8226; Complimentary Wi-Fi for resident guests\n&#8226; Fine-dining speciality restaurants—Wasabi by Morimoto (Japanese), Golden Dragon (Chinese), Masala Kraft (Contemporary Indian) &amp; Souk (Eastern Mediterranean)\n&#8226; Shamiana, 24 hour international a-la-carte restaurant\n&#8226; Aquarius, poolside restaurant for resident guests\n&#8226; La Patisserie\n&#8226; Harbour Bar\n&#8226; Sea Lounge\n&#8226; 24-hour in-room dining\n&#8226; Apollo Lounge</string>
+    <string name="wellness_amenities">&#8226; Morning Yoga by the Pool\n&#8226; Jiva Spa\n&#8226; Taj Salon\n&#8226; Large outdoor pool\n&#8226; 24-hour fitness centre with Technogym equipment\n&#8226; 24-hour on-call doctor &amp; nurse\n&#8226; Facilities for the differently abled</string>
+    <string name="other_conveniences">&#8226; Central location in South Mumbai\n&#8226; Located an hour away from the domestic &amp; international airports\n&#8226; 24-hour business centre, with seven meeting rooms fully equipped with modern conferencing facilities, high-speed Wi-Fi, secretarial assistance, interpretation facilities &amp; workstations\n&#8226; Palace rooms, with access to Palace Lounge, butler service &amp; other facilities\n&#8226; Valet parking facility\n&#8226; Golden Keys Concierge &amp; multilingual staff\n&#8226; Travel desk, car rental services, currency exchange, safe deposit lockers &amp; 24-hour laundry\n&#8226; Kids@Taj programmes &amp; baby-sitting services for young guests\n&#8226; Heritage walks for resident guests City tours on request</string>    <string-array name="rooms_list">
         <item>Tower Superior Rooms</item>
         <item>Tower Deluxe Rooms</item>
         <item>Luxury Grande Rooms</item>

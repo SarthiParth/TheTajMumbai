@@ -1,15 +1,15 @@
 package com.parthsarthi.thetajmumbai;
 
 
+import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.content.Intent;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -125,6 +125,7 @@ public class ContactFragment extends Fragment implements OnMapReadyCallback {
         LatLng taj = new LatLng(18.921727, 72.833020);
         mMap.addMarker(new MarkerOptions().position(taj).title("The Taj Mahal Palace"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(taj, 17));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
     }
 
 }

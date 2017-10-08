@@ -11,6 +11,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    FragmentManager manager;
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     HomeFragment homeFragment = new HomeFragment();
-                    FragmentManager manager = getSupportFragmentManager();
+                    manager = getSupportFragmentManager();
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
                             homeFragment
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         HomeFragment homeFragment = new HomeFragment();
-        FragmentManager manager = getSupportFragmentManager();
+        manager = getSupportFragmentManager();
         manager.beginTransaction().replace(
                 R.id.contentLayout,
                 homeFragment

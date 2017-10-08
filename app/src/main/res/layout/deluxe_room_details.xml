@@ -18,8 +18,8 @@
         android:id="@+id/div"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:src="@drawable/divider"
-        android:layout_below="@id/head"/>
+        android:layout_below="@id/head"
+        android:src="@drawable/divider" />
 
     <TextView
         android:id="@+id/desc"
@@ -65,10 +65,10 @@
         android:id="@+id/viewDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/harbour_view"
+        android:layout_alignStart="@+id/bedDesc"
         android:layout_below="@+id/bedDesc"
-        android:layout_alignStart="@+id/bedDesc" />
+        android:padding="10dp"
+        android:text="@string/harbour_view" />
 
     <TextView
         android:id="@+id/sizeHead"
