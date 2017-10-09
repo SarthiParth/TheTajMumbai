@@ -17,6 +17,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
 
 public class BookFragment extends Fragment {
 
@@ -58,20 +64,35 @@ public class BookFragment extends Fragment {
         EditText inDate = v.findViewById(R.id.checkInDate);
         inDate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                DateDialog dialog = new DateDialog(view);
+                Calendar c = Calendar.getInstance();
+                Date currentDate = c.getTime();
+                int cyear = c.get(Calendar.YEAR);
+                int cmonth = c.get(Calendar.MONTH);
+                int cday = c.get(Calendar.DAY_OF_MONTH);
+                DateDialog dialog = new DateDialog(view, currentDate.getTime());
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
                 dialog.show(ft, "Select Check-In Date");
             }
         });
 
-        EditText outDate = v.findViewById(R.id.checkOutDate);
+        final EditText outDate = v.findViewById(R.id.checkOutDate);
         outDate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                EditText inDateText = v.findViewById(R.id.checkInDate);
-                if (TextUtils.isEmpty(inDateText.getText().toString())) {
+                EditText inDate = v.findViewById(R.id.checkInDate);
+                if (TextUtils.isEmpty(inDate.getText().toString())) {
                     Toast.makeText(getContext(), "Select Check-in Date first", Toast.LENGTH_SHORT).show();
                 } else {
-                    DateDialog dialog = new DateDialog(view);
+                    String string_date = inDate.getText().toString();
+                    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+                    Date minDate = null;
+                    try {
+                        minDate = sdf.parse(string_date);
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    Calendar cal = Calendar.getInstance();
+                    cal.setTime(minDate);
+                    DateDialog dialog = new DateDialog(view, cal.getTimeInMillis());
                     FragmentTransaction ft = getFragmentManager().beginTransaction();
                     dialog.show(ft, "Select Check-Out Date");
                 }

@@ -11,30 +11,24 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
-import java.util.Calendar;
-import java.util.Date;
-
 
 @SuppressLint("ValidFragment")
 public class DateDialog extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
+    private final long dateToSet;
     EditText dateText;
     int cyear, cmonth, cday;
 
-    public DateDialog(View view) {
+    public DateDialog(View view, long dateToSet) {
         dateText = (EditText) view;
+        this.dateToSet = dateToSet;
     }
 
     @NonNull
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
         DatePickerDialog date = new DatePickerDialog(getActivity(), this, cyear, cmonth, cday);
-        final Calendar c = Calendar.getInstance();
-        Date currentDate = c.getTime();
-        cyear = c.get(Calendar.YEAR);
-        cmonth = c.get(Calendar.MONTH);
-        cday = c.get(Calendar.DAY_OF_MONTH);
-        date.getDatePicker().setMinDate(currentDate.getTime());
+        date.getDatePicker().setMinDate(dateToSet);
         return date;
 
     }

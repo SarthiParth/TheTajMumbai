@@ -96,7 +96,7 @@
     <string name="award_1_head">The Destinasian Readers\' Choice Awards</string>
     <string name="award_2_head">Times Food Guide - Mumbai Awards</string>
     <string name="award_3_head">Times Food Guide - Mumbai Awards</string>
-    <string name="disclaimer"><i>Disclamer: This app is exclusively designed for Comfest 17. This app is in no way associated to The Taj Group. The information mentioned here may be fictional.</i></string>
+    <string name="disclaimer"><i>Disclaimer: The creation of this app is solely for educational purposes. All the logos, products, awards, pictures etc. exclusively belong to The Taj Hotels. Some details have been altered for convenience. The developer does not intend to launch the app on any other platform and wishes to terminate the project after Comfest 17 surceases.</i></string>
     <string name="deluxe_room_price">₹ 13,999 per night (Indicative price)</string>
     <string name="exec_suite_price">₹ 38,999 per night (Indicative price)</string>
     <string name="grand_luxury_suite_price">₹ 88,999 per night (Indicative price)</string>
@@ -107,7 +107,7 @@
     <string name="superior_room_price">₹ 11,999 per night (Indicative price)</string>
     <string name="taj_club_room_price">₹ 21,999 per night (Indicative price)</string>
     <string name="tata_suite_price">₹ 1,99,999 per night (Indicative price)</string>
-    <string name="awards_recognitions"><![CDATA[Awards & Recognitions]]></string>
+    <string name="awards_recognitions">Awards &amp; Recognitions</string>
     <string-array name="rooms_list">
         <item>Tower Superior Rooms</item>
         <item>Tower Deluxe Rooms</item>
