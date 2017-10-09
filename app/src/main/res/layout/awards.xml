@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:text="@string/luxury_suites"
+        android:text="@string/awards_recognitions"
         android:textAlignment="center"
         android:textColor="#8e744b"
         android:textSize="30sp" />
@@ -22,92 +22,74 @@
         android:src="@drawable/divider" />
 
     <TextView
-        android:id="@+id/desc"
+        android:id="@+id/award1Head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/div"
-        android:padding="10dp"
-        android:text="@string/luxury_suite_desc" />
-
-    <TextView
-        android:id="@+id/bedHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/desc"
-        android:padding="10dp"
-        android:text="@string/beds"
-        android:textAllCaps="true"
-        android:textColor="#8e744b" />
-
-    <TextView
-        android:id="@+id/bedDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/desc"
-        android:layout_marginStart="30dp"
-        android:layout_toEndOf="@id/bedHead"
-        android:padding="10dp"
-        android:text="@string/bed_k" />
-
-
-    <TextView
-        android:id="@+id/sizeHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/sizeDesc"
-        android:layout_alignBottom="@+id/sizeDesc"
-        android:layout_alignParentStart="true"
-        android:padding="10dp"
-        android:text="@string/size"
-        android:textAllCaps="true"
-        android:textColor="#8e744b" />
-
-    <TextView
-        android:id="@+id/sizeDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/bedDesc"
-        android:layout_below="@+id/bedDesc"
-        android:padding="10dp"
-        android:text="@string/luxury_suite_size" />
-
-    <TextView
-        android:id="@+id/sigExpHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/sizeHead"
-        android:padding="10dp"
-        android:text="@string/signature_experience"
-        android:textAllCaps="true"
-        android:textColor="#8e744b" />
-
-    <TextView
-        android:id="@+id/sigExpHeadDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/sigExpHead"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp"
-        android:text="@string/luxury_suite_sig_exp" />
-
-    <TextView
-        android:id="@+id/price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/sigExpHeadDesc"
         android:layout_centerHorizontal="true"
         android:padding="10dp"
-        android:text="@string/luxury_suite_price"
+        android:text="@string/award_1_head"
+        android:textAllCaps="true"
         android:textColor="#8e744b" />
+
+    <TextView
+        android:id="@+id/award1Desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/award1Head"
+        android:padding="10dp"
+        android:text="@string/award_1_desc"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/award2Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/award1Desc"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/award_2_head"
+        android:textAllCaps="true"
+        android:textColor="#8e744b" />
+
+    <TextView
+        android:id="@+id/award2Desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/award2Head"
+        android:padding="10dp"
+        android:text="@string/award_2_desc"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/award3Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/award2Desc"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/award_3_head"
+        android:textAllCaps="true"
+        android:textColor="#8e744b" />
+
+    <TextView
+        android:id="@+id/award3Desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/award3Head"
+        android:padding="10dp"
+        android:text="@string/award_3_desc"
+        android:textAlignment="center" />
+
 
     <Button
         android:id="@+id/closeBtn"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/price"
+        android:layout_below="@id/award3Desc"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="@string/close" />
 
 </RelativeLayout>

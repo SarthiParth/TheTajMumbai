@@ -110,15 +110,24 @@
         android:paddingStart="10dp"
         android:text="@string/grand_luxury_suite_sig_exp" />
 
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/sigExpHeadDesc"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/grand_luxury_suite_price"
+        android:textColor="#8e744b" />
 
     <Button
         android:id="@+id/closeBtn"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sigExpHeadDesc"
+        android:layout_below="@+id/price"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
         android:text="@string/close" />
 
 </RelativeLayout>

@@ -3,16 +3,22 @@ package com.parthsarthi.thetajmumbai;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.synnapps.carouselview.CarouselView;
@@ -31,6 +37,8 @@ public class HomeFragment extends Fragment {
             imageView.setImageResource(homeSlide[position]);
         }
     };
+    private PopupWindow mPopupWindow;
+    private RelativeLayout mRelativeLayout;
     private View v;
 
 
@@ -67,6 +75,40 @@ public class HomeFragment extends Fragment {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
+            }
+        });
+
+        mRelativeLayout = v.findViewById(R.id.homerl);
+
+        ImageView awards = v.findViewById(R.id.awards);
+        awards.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View customView = inflater.inflate(R.layout.awards, null);
+                mPopupWindow = new PopupWindow(
+                        customView,
+                        ViewGroup.LayoutParams.WRAP_CONTENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT,
+                        true
+                );
+                if (Build.VERSION.SDK_INT >= 21) {
+                    mPopupWindow.setElevation(5.0f);
+                }
+                Button closeButton = customView.findViewById(R.id.closeBtn);
+                closeButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mPopupWindow.dismiss();
+                    }
+                });
+                customView.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View view, MotionEvent motionEvent) {
+                        mPopupWindow.dismiss();
+                        return true;
+                    }
+                });
+                mPopupWindow.showAtLocation(mRelativeLayout, Gravity.CENTER, 0, 0);
             }
         });
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
                             homeFragment
-                    ).commit();
+                    ).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                     return true;
                 case R.id.navigation_about:
                     AboutFragment aboutFragment = new AboutFragment();
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
                             aboutFragment
-                    ).commit();
+                    ).setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                     return true;
                 case R.id.navigation_book:
                     BookFragment bookFragment = new BookFragment();
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
                             bookFragment
-                    ).commit();
+                    ).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                     return true;
                 case R.id.navigation_contact:
                     ContactFragment contactFragment = new ContactFragment();
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
                             contactFragment
-                    ).commit();
+                    ).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                     return true;
                 case R.id.navigation_rooms:
                     RoomFragment roomFragment = new RoomFragment();
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     manager.beginTransaction().replace(
                             R.id.contentLayout,
                             roomFragment
-                    ).commit();
+                    ).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                     return true;
             }
             return false;

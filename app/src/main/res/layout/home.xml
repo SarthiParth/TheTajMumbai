@@ -6,6 +6,7 @@
     tools:context="com.parthsarthi.thetajmumbai.HomeFragment">
 
     <RelativeLayout
+        android:id="@+id/homerl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -53,15 +54,35 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/tabLayout"
             android:layout_centerHorizontal="true" />
-        <!--
-            <RatingBar
-                android:id="@+id/ratingBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:rating="4.5" />
-        -->
+
+        <ImageView
+            android:id="@+id/awards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewPager"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/awards" />
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/awards"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineView"
+            android:layout_marginBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/disclaimer"
+            android:textAlignment="center" />
+
     </RelativeLayout>
 
 </ScrollView>

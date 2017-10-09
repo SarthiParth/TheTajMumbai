@@ -89,7 +89,26 @@
     <string name="tata_suite_sig_exp">The epitome of luxury &#8212; the most desired suite in Mumbai</string>
     <string name="hotel_facilities">&#8226; Luxurious rooms &amp; suites with iconic Arabian Sea &amp; Gateway of India views\n&#8226; Options of smoking &amp; non-smoking accommodation\n&#8226; Marble bathrooms with luxury bath amenities or five-fixture bathrooms with luxury bath amenities\n&#8226; Complimentary Wi-Fi for resident guests\n&#8226; Fine-dining speciality restaurants—Wasabi by Morimoto (Japanese), Golden Dragon (Chinese), Masala Kraft (Contemporary Indian) &amp; Souk (Eastern Mediterranean)\n&#8226; Shamiana, 24 hour international a-la-carte restaurant\n&#8226; Aquarius, poolside restaurant for resident guests\n&#8226; La Patisserie\n&#8226; Harbour Bar\n&#8226; Sea Lounge\n&#8226; 24-hour in-room dining\n&#8226; Apollo Lounge</string>
     <string name="wellness_amenities">&#8226; Morning Yoga by the Pool\n&#8226; Jiva Spa\n&#8226; Taj Salon\n&#8226; Large outdoor pool\n&#8226; 24-hour fitness centre with Technogym equipment\n&#8226; 24-hour on-call doctor &amp; nurse\n&#8226; Facilities for the differently abled</string>
-    <string name="other_conveniences">&#8226; Central location in South Mumbai\n&#8226; Located an hour away from the domestic &amp; international airports\n&#8226; 24-hour business centre, with seven meeting rooms fully equipped with modern conferencing facilities, high-speed Wi-Fi, secretarial assistance, interpretation facilities &amp; workstations\n&#8226; Palace rooms, with access to Palace Lounge, butler service &amp; other facilities\n&#8226; Valet parking facility\n&#8226; Golden Keys Concierge &amp; multilingual staff\n&#8226; Travel desk, car rental services, currency exchange, safe deposit lockers &amp; 24-hour laundry\n&#8226; Kids@Taj programmes &amp; baby-sitting services for young guests\n&#8226; Heritage walks for resident guests City tours on request</string>    <string-array name="rooms_list">
+    <string name="other_conveniences">&#8226; Central location in South Mumbai\n&#8226; Located an hour away from the domestic &amp; international airports\n&#8226; 24-hour business centre, with seven meeting rooms fully equipped with modern conferencing facilities, high-speed Wi-Fi, secretarial assistance, interpretation facilities &amp; workstations\n&#8226; Palace rooms, with access to Palace Lounge, butler service &amp; other facilities\n&#8226; Valet parking facility\n&#8226; Golden Keys Concierge &amp; multilingual staff\n&#8226; Travel desk, car rental services, currency exchange, safe deposit lockers &amp; 24-hour laundry\n&#8226; Kids@Taj programmes &amp; baby-sitting services for young guests\n&#8226; Heritage walks for resident guests City tours on request</string>
+    <string name="award_1_desc">The Taj Mahal Palace was voted Best Hotel in Mumbai at the Destinasian Readers\’ Choice Awards in 2014.</string>
+    <string name="award_2_desc">Golden Dragon at The Taj Mahal Palace was awarded Best Chinese Restaurant (South Mumbai) at the Times Food Guide - Mumbai Awards in 2015.</string>
+    <string name="award_3_desc">Wasabi by Morimoto at The Taj Mahal Palace was awarded Best Japanese Restaurant (South Mumbai) at the Times Food Guide - Mumbai Awards in 2015.</string>
+    <string name="award_1_head">The Destinasian Readers\' Choice Awards</string>
+    <string name="award_2_head">Times Food Guide - Mumbai Awards</string>
+    <string name="award_3_head">Times Food Guide - Mumbai Awards</string>
+    <string name="disclaimer"><i>Disclamer: This app is exclusively designed for Comfest 17. This app is in no way associated to The Taj Group. The information mentioned here may be fictional.</i></string>
+    <string name="deluxe_room_price">₹ 13,999 per night (Indicative price)</string>
+    <string name="exec_suite_price">₹ 38,999 per night (Indicative price)</string>
+    <string name="grand_luxury_suite_price">₹ 88,999 per night (Indicative price)</string>
+    <string name="luxury_grande_room_price">₹ 17,999 per night (Indicative price)</string>
+    <string name="luxury_suite_price">₹ 58,999 per night (Indicative price)</string>
+    <string name="rajput_suite_price">₹ 1,21,999 per night (Indicative price)</string>
+    <string name="ravi_shankar_suite_price">₹ 1,11,999 per night (Indicative price)</string>
+    <string name="superior_room_price">₹ 11,999 per night (Indicative price)</string>
+    <string name="taj_club_room_price">₹ 21,999 per night (Indicative price)</string>
+    <string name="tata_suite_price">₹ 1,99,999 per night (Indicative price)</string>
+    <string name="awards_recognitions"><![CDATA[Awards & Recognitions]]></string>
+    <string-array name="rooms_list">
         <item>Tower Superior Rooms</item>
         <item>Tower Deluxe Rooms</item>
         <item>Luxury Grande Rooms</item>
